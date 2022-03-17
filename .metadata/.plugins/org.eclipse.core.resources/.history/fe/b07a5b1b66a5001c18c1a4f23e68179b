@@ -1,0 +1,22 @@
+package com.ci.controllertest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import com.ci.service.EmployeeService;
+
+@WebMvcTest
+public class ControllerTest {
+
+	@MockBean
+	private EmployeeService employeeService;
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

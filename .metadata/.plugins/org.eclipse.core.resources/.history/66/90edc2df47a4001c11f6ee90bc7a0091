@@ -1,0 +1,9 @@
+package com.ci.controllertest;
+
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+@WebMvcTest
+public class EmployeeResourceTest {
+
+	
+}

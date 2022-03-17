@@ -1,0 +1,5 @@
+package com.ci.repo;
+
+public interface EmployeeRepo {
+
+}

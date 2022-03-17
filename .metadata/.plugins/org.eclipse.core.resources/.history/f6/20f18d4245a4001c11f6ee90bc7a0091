@@ -1,0 +1,21 @@
+package com.ci.resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ci.entity.Employee;
+
+@RestController
+@RequestMapping("/employee")
+public class EmployeeResource {
+
+	@Autowired
+	
+	@PostMapping("/save")
+	public Employee saveEmployee(@RequestBody Employee employee) {
+		
+	}
+}

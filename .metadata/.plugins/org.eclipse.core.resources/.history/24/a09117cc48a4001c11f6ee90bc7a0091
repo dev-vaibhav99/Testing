@@ -1,0 +1,15 @@
+package com.ci.controllertest;
+
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import com.ci.resource.EmployeeResource;
+import com.ci.service.EmployeeService;
+
+@WebMvcTest(value=EmployeeResource.class)
+public class EmployeeResourceTest {
+	
+	@MockBean
+	private EmployeeService employeeService;
+	
+}

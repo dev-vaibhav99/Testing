@@ -1,0 +1,25 @@
+package com.ci.controllertest;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.ci.resource.EmployeeResource;
+import com.ci.service.EmployeeService;
+
+@WebMvcTest(value=EmployeeResource.class)
+public class EmployeeResourceTest {
+	
+	@MockBean
+	private EmployeeService employeeService;
+	
+	@Mock
+	MockMvc mockMvc;
+	
+	@Test
+	public void testSaveEmployee() {
+		System.out.println("Welcome to Testing World");
+	}
+}

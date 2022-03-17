@@ -1,0 +1,28 @@
+package com.ci.controllertest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.mockito.Mock;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.ci.entity.Employee;
+import com.ci.service.EmployeeService;
+
+@WebMvcTest
+public class ControllerTest {
+
+	@MockBean
+	private EmployeeService employeeService;
+	
+	@Mock
+	private MockMvc mockMvc;
+	
+	@Test
+	public void test() {
+		Employee employee = new Employee(1l,"Vaibhav","vaibhav@gmail.com","SDE",95000);
+	}
+
+}
